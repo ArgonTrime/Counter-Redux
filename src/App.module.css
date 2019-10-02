@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.container div {
+    margin: 5px;
+}
+
+
+/* counter css*/
+.boxCounter {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+
+
+}
+.boxCounter p {
+    margin: 10px;
+}
+.addBtn {
+    background-color: green;
+
+}
+.deleteBtn {
+    background-color: darkred;
+}
+.active {
+    z-index: 10;
+    border: 1px solid forestgreen;
+    background-color: forestgreen;
+    border-radius: 10px;
+}
+
+
+/* settings css*/
+.boxSettings {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+.boxSettings input {
+    margin: 0 5px;
+}
+.setBtn {
+    background-color: grey;
+}
+.setBtnDisabled {
+    opacity: 10%;
+}
+
+/* error css*/
+.boxError {
+    border: 3px solid darkred;
+    border-radius: 10px;
+    background-color: white;
+    color: darkred;
+}
+.boxError button {
+    background-color: darkred;
+}
+.focus {
+    opacity: 10%;
+}
+.inputError {
+    border: 1px solid red;
+    background-color: lightcoral;
+    color: white;
+}
