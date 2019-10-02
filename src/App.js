@@ -3,6 +3,7 @@ import s from './App.module.css';
 import Counter from "./component/counter/Counter";
 import CounterSettings from "./component/counterSettings/CounterSettings";
 import Error from "./component/error/Error";
+import {connect} from "react-redux";
 
 class App extends React.Component {
 
@@ -203,4 +204,11 @@ class App extends React.Component {
         );
     };
 }
-export default App;
+
+let mapStateToProps = (state) => {
+    return {
+        counter: state.counter
+    }
+};
+
+export default connect(mapStateToProps, {})(App);
